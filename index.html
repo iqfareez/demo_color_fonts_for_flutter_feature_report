@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+
+    <style>
+        body {
+            font-size: 7rem;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        @font-face {
+            font-family: MyTestFont;
+            src: url('MyTestFont-Regular.ttf');
+        }
+
+        @font-palette-values --Dark {
+            font-family: MyTestFont;
+            base-palette: 1;
+        }
+
+        @font-palette-values --Light {
+            font-family: MyTestFont;
+            base-palette: 0;
+        }
+
+        .my-text-light {
+            font-family: "MyTestFont";
+            font-palette: --Light;
+        }
+
+        .my-text-dark {
+            font-family: "MyTestFont";
+            font-palette: --Dark;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="my-text-light">F</h1>
+    <h1 class="my-text-dark">F</h1>
+</body>
+
+</html>
